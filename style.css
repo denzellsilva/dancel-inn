@@ -1,0 +1,210 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: aliceblue; */
+}
+
+header {
+    background-color: #333;
+    color: aquamarine;
+    text-align: center;
+    box-shadow: 0 0 1em black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pixelify Sans', cursive;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0.5em;
+    animation: blinker 1.5s linear infinite;
+    color: aquamarine;
+    }
+
+nav {
+    background-color: #444;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px; 
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    padding: 1em;
+    font-size: 1.2em;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+nav a:hover, .active {
+    text-decoration: underline;
+    transition: 0.5s;
+    color: aquamarine;
+}
+
+main > *:first-child {
+    margin-top: 9em;
+}
+
+
+main {
+    background-color: white;
+    max-width: 52rem;
+    padding: 20px 6rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    box-shadow: 0 0 0.2em #e6e6e6;
+    border: 1px solid #f1f1f1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+nav form {
+    display: flex;
+}
+
+nav form * {
+    display: block;
+    margin: auto 0;
+}
+
+input[type="text"] {
+    height: 2em;
+    margin-right: 1em;
+    border-radius: .5em;
+    transition: 0.5s;
+}
+
+button {
+    height: 2.3em;
+    border-radius: .5em;
+    border: 1px solid black;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+section p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.showcase, .room {
+    display: block;
+    margin: 1.5rem auto;
+    height: 418px;
+}
+
+h2, h3 {
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+
+section {
+    margin: 2em 0;
+}
+
+input[type="text"]:focus {
+    border: 1px solid aquamarine;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #d9d9d9;
+}
+
+.fb {
+    display: inline-block;
+    height: 1.5em;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+iframe {
+    display: block;
+    margin: 1em auto;
+    border: 0.2rem ridge;
+}
+
+.dropbtn {
+    border: none;
+    background-color: #444;
+    color: white;
+    padding: 1em;
+    font-size: inherit;
+    border: none;
+    cursor: pointer;
+    display: block;
+    height: inherit;
+    font-size: 1.2em;
+    transition: 0.3s;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus, .dropbtn.active {
+    background-color: #444;
+    color: aquamarine;
+    text-decoration: underline;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover, .dropdown a.active { text-decoration:underline; color: aquamarine;}
+  
+  .show {display: block;}
+  
